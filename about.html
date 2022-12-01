@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce : About page</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <nav class="nav nav_top">
+        <div class="logo">
+          <a href="stop.html"><img src="az.png" width="170"></a>
+        </div>
+        <div class="nav_side">
+            <a href="about.html">About Us</a>
+            <a href="service.html">Services</a>
+            <a href="blog.html">Blogs</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login/Register</a>
+        </div>
+    </nav>
+
+    <div class="about_us">
+        <h2>About us</h2>
+        <div class="about_content">
+            <p>
+                At Gulmohar Lane, we take great pride in design and  hand-craftsmanship of our products. Our in-house designers create time honed designs. The expert craftsmen, some of them even from the fourth generations of furniture and sofa karigars, who have been working for the Royalty in Rajasthan, transform these designs into timeless products. Our designs blend contemporary sensibilities with traditions of excellence in craftsmanship and quality. Our products whether a Sofa, a Chair, a Coffee table or Soft furnishings are made in India to the most exacting standards and designed in styles, so that they bring exceptional beauty to your home. 
+            </p>
+        </div>
+        <hr>
+        <h2>Our mission</h2>
+        <p>
+            <h4>QUALITY</h4> <br>
+
+Gulmohar Lane, an online furniture store believes in combining outstanding quality with astonishing value, offering a carefully curated, assortment of home products. Pairing timeless elements with fresh twists, each item is designed to enhance a room, or inspire a memorable experience<br>
+<h4>NATURAL</h4><br>
+We believe a blank canvas is something full of possibilities and with unlimited potential. At Gulmohar Lane, an online furniture store we celebrate the beauty of natural materials that are crafted into simple, one-of-a-kind shapes and silhouettes. Whether its our  fabrics  made out of natural yarns like Linen and Cotton, which are at times handwoven or our furniture pieces which are timeless in their design and useful in their purpose, anything natural excites us!<br>
+<h4>SUSTAINABILITY</h4><br>
+We strive to use materials that are sustainably sourced. We believe in supporting artisans and craftsmen and their crafts. As a brand we want to preserve and use the dying, traditional techniques of sofa and furniture making.  We are associated with an NGO; Vishwakarma Swayam Sahayata Samuh, which is engaged in helping and providing education & training to the local artisans. <br>
+COMFORT
+Whether it is comfort of shopping with us or the comfort provided by our products like sofas and chairs using high quality material like foams, fibers and down feathers, we have taken care of all your comfort needs in our products<br>
+<h4>STRONG AESTHETICS</h4><br>
+Gulmohar Lane believes in creating beautiful aesthetics that will live with you forever. Our design philosophy is very clear, to create and sell products which are honest, breathe easy and exude strong aesthetics<br>
+        </p>
+    </div>
+    <div class="feed">
+        <h2>Write a review</h2>
+        <div class="feed_form">
+            <form name="google-sheet" method="post">
+                <input type="text" name="Name" placeholder="Name"><br>
+                <input type="email" name="Email" placeholder="Email"><br>
+                <input type="number" name="Number" placeholder="Contact Number"><br>
+                <textarea rows="5" cols="7" name="Review" placeholder="Write your review"></textarea><br>
+                <button type="sumbit">Submit</button>
+            </form>
+        </div>
+    
+    </div>
+    <footer>
+        <div class="footer_logo">
+            <a href="stop.html"><img src="az.png" width="170"></a>   
+        </div>
+        <div class="pages">
+            <h3>Pages</h3>
+            <a href="about.html">About Us</a>|
+            <a href="service.html">Services</a>|
+            <a href="blog.html">Blogs</a>|
+            <a href="login.html">Login</a>|
+            <a href="">Sign Up</a>
+        </div>
+        <div class="doc">
+            <h3>Documents</h3>
+            <a href="">Privacy Policy</a>|
+            <a href="">Terms of Use</a>|
+            <a href="">Refund Policy</a>
+        </div>
+        <div class="social">
+            <h3>Follow us</h3>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/login" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/login" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        </div>
+        <div class="contact">
+            <h3>Contact Us</h3>
+            <a href="https://www.whatsapp.com/" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+            <a href="tel: +918791997667"><i class="fa fa-phone" aria-hidden="true"></i></a>
+            <a href="mailto: priyanshvip07@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        </div>
+        <hr>
+        <p>Copyright &copy; 2021 Instragram. All rights reserved</p>
+    </footer>
+    <script type="text/javascript">
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxzQ4qbvHvSkRxNiQ4d0uObRxEwhV584L1k6wGHJGXH7fVzRt6fBU5O_0-70qEWqly5/exec'
+        const form = document.forms['google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    </body>
+    </html>
